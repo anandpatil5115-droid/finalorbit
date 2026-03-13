@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const navLinks = [
@@ -22,10 +23,10 @@ export default function Navbar() {
   return (
     <nav ref={navRef} className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
-        <a href="#" className="navbar__logo">
-          <span className="navbar__logo-icon">⚡</span>
-          <span className="navbar__logo-text">LearnFlow</span>
-        </a>
+        <Link to="/" className="navbar__logo">
+          <span className="navbar__logo-icon">🚀</span>
+          <span className="navbar__logo-text">SkillOrbit</span>
+        </Link>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
           {navLinks.map(lnk => (
@@ -38,10 +39,10 @@ export default function Navbar() {
         </ul>
 
         <div className="navbar__actions">
-          <a href="#" className="btn btn-ghost navbar__signin">Sign In</a>
-          <a href="#" className="btn btn-primary">
+          <Link to="/login" className="btn btn-ghost navbar__signin">Sign In</Link>
+          <Link to="/signup" className="btn btn-primary">
             <span>Get Started</span>
-          </a>
+          </Link>
         </div>
 
         <button
