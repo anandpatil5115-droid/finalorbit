@@ -81,7 +81,7 @@ export default function Hero() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: 'clamp(72px, 9vw, 120px)',
               color: 'transparent',
-              WebkitTextStroke: '2px #b4bcf4',
+              WebkitTextStroke: '2px #1e1b4b',
               display: 'block',
               lineHeight: 0.95,
               letterSpacing: '-1px'
@@ -98,7 +98,7 @@ export default function Hero() {
             <span style={{
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: 'clamp(72px, 9vw, 120px)',
-              color: '#eaeaff',
+              color: '#0f0a1e',
               display: 'block',
               lineHeight: 0.95,
               letterSpacing: '-1px'
