@@ -10,7 +10,7 @@ import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
-import SplineBackground from './components/SplineBackground'
+import AnimatedBackground from './components/AnimatedBackground'
 
 function App() {
   useEffect(() => {
@@ -28,9 +28,10 @@ function App() {
 
     return () => lenis.destroy()
   }, [])
+
   return (
     <div className="app">
-      <SplineBackground />
+      <AnimatedBackground />
       <div className="dot-overlay" />
       <Navbar />
       <Hero />
